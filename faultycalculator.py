@@ -1,29 +1,32 @@
-#Program for developing a faulty calculator
-print("Welcome basic calculator by iamsami.XYZ")
-print("Enter First Number")
-n1 = int(input())
-print("Enter 2nd Number")
-n2 = int(input())
-#mathematical operation to be performed
-print("Mathematical Operation to be Performed:+,-,/,*")
-n3 = input()
-if n1 ==45 and n2 ==3 and n3 =='*':
-    print("555")
-elif n1 ==56 and n2 ==9 and n3 =='+':
-    print("77")
-elif n1 ==56 and n2 ==6 and n3 =='/':
-    print("4")
-elif n3 =='*':
-    n4= (n1*n2)
-    print(n4)
-elif n3 =='+':
-    add=(n1+n2)
+#Calcuator which makes three calculations wrong !!!
+#45x3=120 , 56+9=69 , 56/6=9 , 129-11=116
+print("\t =====Hello Welcome to My Faulty Calculator===== ")
+print('Enter Your 1st Number')
+num1= int(input())
+print('Choose Your Mathematical Operation: +,-,/,*')
+num3= input()
+print('Enter Your 2nd Number')
+num2= int(input())
+if num1==45 and num2==3 and num3=='*':
+    print("120")
+elif num1==56 and num2==9 and num3=='+':
+    print("69")
+elif num1==56 and num2==6 and num3=='/':
+    print("9")
+elif num1==129 and num2==11 and num3=='-':
+    print("116")
+elif num3=='*':
+    cross=(num1*num2)
+    print(cross)
+elif num3=='+':
+    add=(num1+num2)
     print(add)
-elif n3 =='/':
-    div =(n1/n2)
+elif num3=='/':
+    div=(num1/num2)
     print(div)
-elif n3 =='-':
-    minus=(n1-n2)
-    print(minus)
+elif num3=='-':
+    sub=(num1-num2)
+    print(sub)
 else:
-    print("Oops! Wrong Input")
+    print("Wrong Input")
+
