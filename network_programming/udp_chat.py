@@ -44,8 +44,7 @@ def reciever():
         port= y[1][1]
         message=y[0].decode()
         # Recv from is used to get data via network and the max size here is 1024 bytes
-        finalv=print(addr + ":" + str(port) + "=" + message)
-        print(finalv)
+        print("Message Recieved : {}\n".format(message))
 
 x1=threading.Thread(target=sender)
 x2=threading.Thread(target=reciever)
@@ -54,5 +53,12 @@ if option==1:
             x2.start()
 elif option==2:
     print("Group Chat")
+    while True:
+        y=mysocket.recvfrom(1024)
+        addr= y[1][0]
+        port= y[1][1]
+        message=y[0].decode()
+        # Recv from is used to get data via network and the max size here is 1024 bytes
+        print("{0}: {1}\n".format(addr,message))
 elif option==3:
     exit()
