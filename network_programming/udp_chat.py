@@ -1,4 +1,4 @@
-# UDP Program for chat via nework from client to client
+# UDP Program for chat via nework from client to client using threads
 # importing the module used for UDP Program / Soket Programming
 
 import socket
