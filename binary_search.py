@@ -7,6 +7,9 @@
 # database == from where our value will be searched
 # No of Steps are based on the Algorith Log base n .
 
+print("""#############################################################
+###################### Binary Search ########################
+#############################################################""")
 database=list(range(1,12))
 def binary_search(database,value):
     
