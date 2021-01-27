@@ -17,7 +17,7 @@ def binary_search(database,value):
     end=len(database) -1
     middle=int((start + end) / 2)
     # while not here is used beacause we dont want our program running infinetly so whenever it gets true it will convert itself to false.
-    while not (database[middle] == value):
+    while not (database[middle] == value) and start <= end:
         if value > database[middle]:
             start = middle + 1
         else:
