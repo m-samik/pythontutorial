@@ -5,7 +5,7 @@
 # Binary Search Function :: Created by Us Manually.
 # value == parameter of our function , for the value to search .
 # database == from where our value will be searched
-# No of Steps are based on the Algorith Log base n.
+# No of Steps are based on the Algorith Log base n .
 
 database=list(range(1,12))
 def binary_search(database,value):
